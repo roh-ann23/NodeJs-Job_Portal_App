@@ -76,7 +76,7 @@ server.use("/api/v1/jobs", jobRouter);
 server.use(errorMiddleware);
 
 server.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello Guys, Welcome to Job Portal Application");
 });
 
 const PORT = process.env.PORT || 8080;
