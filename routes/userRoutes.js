@@ -13,7 +13,7 @@ const router = express.Router();
 /**
  * @swagger
  * /api/v1/user/update-user:
- *   post:
+ *   put:
  *     summary: Update a job
  *     description: This endpoint is for Updating a job entry in the system.
  *     tags: [User]
