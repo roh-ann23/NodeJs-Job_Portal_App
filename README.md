@@ -57,7 +57,7 @@ The application provides the following routes for jobs:
 You can test these routes using Postman or any other API testing tool.
 
 
-### Installation
+## Installation
 
 1. **Install Dependencies**: Run the following command in your terminal to install the required dependencies:
 
@@ -65,14 +65,44 @@ You can test these routes using Postman or any other API testing tool.
 npm install
 ```
 
-### Set up MongoDB: 
+## Set up MongoDB: 
 
 Make sure you have MongoDB installed on your system. Create a .env file in the root directory of your project and provide your MongoDB connection URI:
  - **1** MONGODB_URI=your_mongodb_connection_uri
    
-### Usage
+## Usage
  #### Start the Server:
   * Run the following command to start the server:
     npm start
     
 The server will start running on http://localhost:port. Replace port with the port number specified in your environment variables or 3000 by default.
+
+## Postman API Testing Guide
+
+### Making Requests
+
+1. **Create New Request**: Click on the "New" button in the top-left corner and select "Request."
+
+2. **Enter Request Details**: Provide a name for your request and choose the HTTP method (e.g., GET, POST, PUT, DELETE).
+
+3. **Enter Request URL**: Enter the full URL of the API endpoint you want to test. If you're using environment variables, you can use them here (e.g., `{{BASE_URL}}/api/users`).
+
+4. **Add Headers (if necessary)**: If your API requires headers (e.g., authentication tokens), you can add them under the "Headers" tab.
+
+5. **Add Request Body (if necessary)**: For POST, PUT, or PATCH requests, you can add request body parameters under the "Body" tab.
+
+6. **Send Request**: Click on the "Send" button to send the request to the server.
+
+### Viewing Responses
+
+1. **Response Status**: The status of the response (e.g., 200 OK, 404 Not Found) will be displayed along with the response time.
+
+2. **Response Body**: The response body will be displayed below, showing the data returned by the server.
+
+3. **Response Headers**: You can view the response headers under the "Headers" tab.
+
+4. **Response Cookies**: If the response contains cookies, you can view them under the "Cookies" tab.
+
+### Conclusion
+
+Postman is a powerful tool for testing and debugging APIs. With its user-friendly interface and comprehensive features, it's an essential tool for backend developers to ensure the reliability and functionality of their APIs.
