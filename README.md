@@ -77,7 +77,7 @@ Make sure you have MongoDB installed on your system. Create a .env file in the r
     
 The server will start running on http://localhost:port. Replace port with the port number specified in your environment variables or 3000 by default.
 
-## Postman API Testing Guide
+## Postman For Testing API
 
 ### Making Requests
 
